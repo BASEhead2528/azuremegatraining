@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Lets play with Redis Cache and Unit tests</h1>
+    @using (Html.BeginForm(
+        actionName:"",
+        controllerName: "Home",
+        method:FormMethod.Post
+    ))
+    {
+        @Html.TextAreaFor()
+
+        <textarea placeholder="Feed me information to cache"/>
+        <button type="submit">Go</button>
+    }
+</div>
